@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/honorScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/honor_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:padding="13dp"
+            android:src="@drawable/honor_logo" />
+
+        <ListView
+            android:id="@+id/honor_lvactivityPrds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000"
+            android:layout_below="@id/honor_logo" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/honor_tvotherHoners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/honor_lvactivityPrds"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/homelist_bg_solid"
+            android:padding="10dp"
+            android:text="荣耀家族其他成员"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ListView
+            android:id="@+id/honor_lvotherHoners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/honor_tvotherHoners" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/honor_commonFitting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/honor_lvotherHoners"
+            android:background="@drawable/homelist_bg_solid"
+            android:padding="5dp"
+            android:text="通用配件"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <GridView
+            android:id="@+id/honor_gvcommonFitting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:listSelector="@null"
+            android:background="@drawable/homelist_bg_solid"
+            android:layout_below="@id/honor_commonFitting" >
+        </GridView>
+    </RelativeLayout>
+
+</ScrollView>

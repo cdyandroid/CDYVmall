@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#f6f6f6" >
+
+    <TextView
+        android:id="@+id/grid_searchinit_tvword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:background="@drawable/tv_bg_white"
+        android:text="华为 Mate7" />
+
+</RelativeLayout>

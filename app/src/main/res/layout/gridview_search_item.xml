@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homelist_bg_solid" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/grid_search_tvprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="￥1999.0"
+            android:textColor="#aa0000"
+            android:textSize="12sp" />
+<!-- grid_search_tvprice grid_search_tvname -->
+        <TextView
+            android:id="@+id/grid_search_tvpromotionWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grid_search_tvprice"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="指纹识别"
+            android:textColor="#555555"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/grid_search_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grid_search_tvpromotionWord"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="荣耀7i"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/grid_search_ivpicUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/grid_search_tvpromotionWord"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/grid_search_ivprdStatus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/status_hot_sale" />
+</RelativeLayout>

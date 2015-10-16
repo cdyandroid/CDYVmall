@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homelist_bg_solid" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/grid_star_tvprdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="荣耀6"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/grid_star_tvprdDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/grid_star_tvprdName"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="开放抢购"
+            android:textColor="#555555"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/grid_stat_tvprdUnitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/grid_star_tvprdDescription"
+            android:gravity="left"
+            android:text="￥1499.00"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/grid_stat_ivprdPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/grid_stat_tvprdUnitPrice"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/grid_stat_ivprdStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/status_hot_sale" />
+
+</RelativeLayout>

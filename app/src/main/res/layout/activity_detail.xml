@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textview9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:background="#999999"
+        android:textSize="14sp"
+        android:text="详 情"
+        android:textColor="#ffffff" />
+    <ImageView 
+        android:id="@+id/detail_ivbackmain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:src="@drawable/home_normal" />
+    <ImageView 
+        android:id="@+id/detail_ivshare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/share_normal" />
+    <WebView 
+        android:id="@+id/detail_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textview9"/>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/homelist_bg_solid" >
+
+        <ImageView
+            android:id="@+id/list_activityprds_ivactivityPicUrl"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/list_activityprds_lltv"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_activityprds_ivactivityPicUrl"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/list_activityprds_tvactivityTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="2015-9-15 10:08:00"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/list_activityprds_tvactivityDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="9月15日10:08准点开售，仅限9月14日18:00之前预约用户购买"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_activityprds_llstatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_activityprds_lltv"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/list_activityprds_lltv"
+            android:layout_below="@+id/list_activityprds_ivactivityPicUrl"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/list_activityprds_btnstatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_bg_orange"
+                android:text="前往预约"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_activityprds_llstatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_activityprds_lltv"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/list_activityprds_lltv"
+            android:layout_below="@+id/list_activityprds_ivactivityPicUrl"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/list_activityprds_btnstatus3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_bg_white"
+                android:text="闹钟提醒"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/list_activityprds_btnstatus3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_bg_white"
+                android:text="等待抢购"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_activityprds_llstatus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_activityprds_lltv"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/list_activityprds_lltv"
+            android:layout_below="@+id/list_activityprds_ivactivityPicUrl"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/list_activityprds_btnstatus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_bg_orange"
+                android:text="前往抢购"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/list_activityprds_lltv"
+            android:background="@drawable/homelist_bg_solid"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/list_activityprds_ivfittingPicUrl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/list_activityprds_tvfittingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:gravity="bottom"
+                android:padding="2dp"
+                android:text="荣耀畅玩4专属配件"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/list_activityprds_tvfittingDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/list_activityprds_tvfittingTitle"
+                android:padding="2dp"
+                android:text="保护膜、保护壳等"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
